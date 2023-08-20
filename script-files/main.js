@@ -1,5 +1,3 @@
-console.log('javascript')
-
 document.getElementById('card-one').addEventListener('click', function(){
   
   const productPrice = inputPrice('price-one')
@@ -11,9 +9,6 @@ document.getElementById('card-one').addEventListener('click', function(){
   enableCouponButton();
   applyCoupon();
 }) 
-
-
-
 
 document.getElementById('card-two').addEventListener('click', function(){
   const productPrice = inputPrice('price-two')
@@ -70,8 +65,13 @@ document.getElementById('card-six').addEventListener('click', function(){
   applyCoupon();
 })
 
-const p1 = document.getElementById('total-price').innerText;
-console.log(p1);
+document.getElementById('go-home').addEventListener('click', function(){
+  document.getElementById('product-entry').innerHTML = '';
+  document.getElementById('total-price').innerText = '';
+  document.getElementById('discount-amount').innerText = '';
+  document.getElementById('total').innerText = '';
+  window.location.href = 'index.html';
+})
 
 
 

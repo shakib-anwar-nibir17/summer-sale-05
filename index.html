@@ -29,6 +29,12 @@
     .work-sans{
       font-family: 'Work Sans', sans-serif;
     }
+    #coupon-button{
+      border-radius: 0px 8px 8px 0px;
+    }
+    #coupon-field{
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body class="work-sans">
@@ -189,9 +195,31 @@
           </div>
           <!-- cart container -->
           <div class="w-full lg:w-[400px] border-2 border-red-800 h-[700px]">
-            <div>
-              <input type="text">
-              <button></button> 
+            <!-- coupon section -->
+            <div class="bg-[#FFFFFF] mx-8 mt-4 py-5">
+              <h1 class="text-2xl font-semibold text-center  mt-6">Have coupon?</h1>
+            <div class="mt-4 px-5 h-[55px] flex justify-center">
+              <input id="coupon-field" class="h-full w-[200px] px-10 border-[1px] py-1 border-gray-100" type="text" placeholder="Coupon code">
+              <button id="coupon-button" class=" h-full w-[100px] -ml-2 text-center text-white bg-[#E527B2]">Apply</button> 
+            </div>
+            </div>
+            <!-- price calculation section -->
+            <div class="bg-[#FFFFFF] mx-8 mt-4 py-5 px-4">
+              <!-- product entry -->
+              <div>
+
+              </div>
+              <!-- calculation -->
+              <hr>
+              <div class="mt-4 mb-4">
+                <p class="text-base lg:text-xl"><span class="font-semibold">Total price:</span>  <span class="text-gray-400">0.0</span> Tk</p>
+                <p class="text-base lg:text-xl"><span class="font-semibold">Discount:</span>  <span class="text-gray-400">0.0</span> Tk</p>
+                <p class="text-base lg:text-xl"><span class="font-semibold">Total:</span>  <span class="text-gray-400">0.0</span> Tk</p>
+              </div>
+              <hr class="mb-10">
+            </div>
+            <div class="flex justify-center -mt-5">
+              <button class=" w-[200px] lg:w-[294px] h-[56px] text-white bg-[#E527B2] rounded-lg">Make Purchase</button>
             </div>
           </div>
       </div>    

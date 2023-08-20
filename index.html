@@ -65,7 +65,7 @@
               <!-- Kitchenware cards -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-10 lg:gap-20">
                  <!-- card1 -->
-                 <div class="card w-full md:w-[300px] bg-base-100 shadow-xl">
+                 <div id="card-one" class="card w-full md:w-[300px] bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod1.png" alt="Kitchen Gadgets" class="rounded-xl" />
@@ -80,12 +80,12 @@
                       <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Kitchen Gadgets</h2>
-                    <p><span>39.00</span> TK</p>
+                    <p><span id="price-one">39.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-1 ending -->
                  <!-- card2 -->
-                 <div class="card w-full md:w-[300px] bg-base-100 shadow-xl">
+                 <div id="card-two"  class="card w-full md:w-[300px] bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod2.png" alt="Serving Items" class="rounded-xl" />
@@ -100,12 +100,12 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Serving Items</h2>
-                    <p><span>25.00</span> TK</p>
+                    <p><span id="price-two">25.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-2 ending -->
                  <!-- card-3 -->
-                 <div class="card w-full md:w-[300px]bg-base-100 shadow-xl">
+                 <div id="card-three" class="card w-full md:w-[300px]bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod3.png" alt="Cooking Pots" class="rounded-xl" />
@@ -120,18 +120,18 @@
                       <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Cooking Pots</h2>
-                    <p><span>49.00</span> TK</p>
+                    <p><span id="price-three">49.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-3 ending -->
               </div>
             </div>
             <div class="mb-10">
-              <h1 class="text-4xl font-bold text-center md:text-left">Kitchenware</h1>
+              <h1 class="text-4xl font-bold text-center md:text-left">Sportswear</h1>
               <!-- Sportswear cards -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-10 lg:gap-20">
                  <!-- card-4 -->
-                 <div class="card w-full md:w-[300px] bg-base-100 shadow-xl">
+                 <div id="card-four" class="card w-full md:w-[300px] bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod4.png" alt="Sports Back Cap" class="rounded-xl" />
@@ -146,12 +146,12 @@
                       <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Sports Back Cap</h2>
-                    <p><span>49.00</span> TK</p>
+                    <p><span id="price-four">49.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-4 ending -->
                  <!-- card5 -->
-                 <div class="card w-full md:w-[300px] bg-base-100 shadow-xl">
+                 <div id="card-five" class="card w-full md:w-[300px] bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod5.png" alt="Full Jersey Set" class="rounded-xl" />
@@ -166,12 +166,12 @@
                       <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Full Jersey Set</h2>
-                    <p><span>69.00</span> TK</p>
+                    <p><span id="price-five">69.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-5 ending -->
                  <!-- card-6 -->
-                 <div class="card w-full md:w-[300px]bg-base-100 shadow-xl">
+                 <div id="card-six" class="card w-full md:w-[300px]bg-base-100 shadow-xl hover:cursor-pointer">
                   <div class="px-6 pt-6">
                     <figure class="px-10 pt-10 bg-[#1111110D] p-10">
                       <img src="./images/prod6.png" alt="Sports cates" class="rounded-xl" />
@@ -186,7 +186,7 @@
                       <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
                     <h2 class="card-title">Sports cates</h2>
-                    <p><span>159.00</span> TK</p>
+                    <p><span id="price-six">159.00</span> TK</p>
                   </div>
                 </div>
                 <!-- card-6 ending -->
@@ -212,9 +212,9 @@
               <!-- calculation -->
               <hr>
               <div class="mt-4 mb-4">
-                <p class="text-base lg:text-xl"><span class="font-semibold">Total price:</span>  <span class="text-gray-400">0.0</span> Tk</p>
-                <p class="text-base lg:text-xl"><span class="font-semibold">Discount:</span>  <span class="text-gray-400">0.0</span> Tk</p>
-                <p class="text-base lg:text-xl"><span class="font-semibold">Total:</span>  <span class="text-gray-400">0.0</span> Tk</p>
+                <p class="text-base lg:text-xl"><span class="font-semibold">Total price:</span>  <span id="total-price"  class="text-gray-400">0.00</span> Tk</p>
+                <p class="text-base lg:text-xl"><span class="font-semibold">Discount:</span>  <span id="discount-amount" class="text-gray-400">0.00</span> Tk</p>
+                <p class="text-base lg:text-xl"><span class="font-semibold">Total:</span>  <span id="total"  class="text-gray-400">0.00</span> Tk</p>
               </div>
               <hr class="mb-10">
             </div>
@@ -225,6 +225,7 @@
       </div>    
     </section>
   </main>
+  <script src="./script-files/common-function.js"></script>
   <script src="./script-files/main.js"></script>
 </body>
 </html>

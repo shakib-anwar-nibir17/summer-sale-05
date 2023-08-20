@@ -57,6 +57,7 @@ function applyCoupon(){
     const couponField = document.getElementById('coupon-field');
     const couponCode = couponField.value;
     if( couponCode === 'SELL200'){
+      couponField.value = '';
       const totalPrice = document.getElementById('total-price').innerText;
        const totalPriceValue = parseFloat(totalPrice);
        const discountPrice = totalPriceValue * 0.2
@@ -65,7 +66,33 @@ function applyCoupon(){
         setValue('total', total);
     }
     else{
+      couponField.value = '';
       return;
     }
   })
 }
+
+// function applyCoupon() {
+//   const couponField = document.getElementById('coupon-field');
+//   const couponButton = document.getElementById('coupon-button');
+  
+//   couponButton.onclick = function() {
+//     const couponCode = couponField.value;
+    
+//     if (couponCode === 'SELL200') {
+//       couponField.value = '';
+//       const totalPrice = document.getElementById('total-price').innerText;
+//       const totalPriceValue = parseFloat(totalPrice);
+//       const discountPrice = totalPriceValue * 0.2;
+//       const total = totalPriceValue - discountPrice;
+      
+//       setValue('discount-amount', discountPrice);
+//       setValue('total', total);
+//     } else {
+//       couponField.value = ''; 
+//       alert('Invalid Coupon Code'); 
+//     }
+//   };
+// }
+
+

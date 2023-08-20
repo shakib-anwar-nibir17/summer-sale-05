@@ -13,6 +13,19 @@ function setValue(inputId, value){
   document.getElementById(inputId).innerText = valueFormatted;
 }
 
+function addToProductEntry(inputId){
+  const productEntry = document.getElementById('product-entry');
+  const count = productEntry.childElementCount;
+
+  const p = document.createElement('p');
+  p.classList.add = ('my-4');
+  p.innerHTML =` ${count + 1}. ${inputId} `
+
+  productEntry.appendChild(p);
+}
+
+
+
 function enablePurchaseButton(){
   const validationString = document.getElementById('total-price').innerText;
   const validation = parseFloat(validationString);

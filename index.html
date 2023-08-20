@@ -35,6 +35,12 @@
     #coupon-field{
       border-radius: 8px;
     }
+    #purchase-btn:disabled {
+      opacity: 0.5; 
+    }
+    #coupon-button:disabled {
+      opacity: 0.5; 
+    }
   </style>
 </head>
 <body class="work-sans">
@@ -200,7 +206,7 @@
               <h1 class="text-2xl font-semibold text-center  mt-6">Have coupon?</h1>
             <div class="mt-4 px-5 h-[55px] flex justify-center">
               <input id="coupon-field" class="h-full w-[200px] px-10 border-[1px] py-1 border-gray-100" type="text" placeholder="Coupon code">
-              <button id="coupon-button" class=" h-full w-[100px] -ml-2 text-center text-white bg-[#E527B2]">Apply</button> 
+              <button id="coupon-button" disabled class=" h-full w-[100px] -ml-2 text-center text-white bg-[#E527B2]">Apply</button> 
             </div>
             </div>
             <!-- price calculation section -->
@@ -219,7 +225,7 @@
               <hr class="mb-10">
             </div>
             <div class="flex justify-center -mt-5">
-              <button class=" w-[200px] lg:w-[294px] h-[56px] text-white bg-[#E527B2] rounded-lg">Make Purchase</button>
+              <button id="purchase-btn" disabled class=" w-[200px] lg:w-[294px] h-[56px] text-white bg-[#E527B2] rounded-lg">Make Purchase</button>
             </div>
           </div>
       </div>    

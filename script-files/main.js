@@ -5,6 +5,9 @@ document.getElementById('card-one').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 }) 
 
 document.getElementById('card-two').addEventListener('click', function(){
@@ -12,6 +15,9 @@ document.getElementById('card-two').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 })  
 
 document.getElementById('card-three').addEventListener('click', function(){
@@ -19,6 +25,9 @@ document.getElementById('card-three').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 })
 
 document.getElementById('card-four').addEventListener('click', function(){
@@ -26,6 +35,9 @@ document.getElementById('card-four').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 })
 
 document.getElementById('card-five').addEventListener('click', function(){
@@ -33,6 +45,9 @@ document.getElementById('card-five').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 })
 
 document.getElementById('card-six').addEventListener('click', function(){
@@ -40,6 +55,9 @@ document.getElementById('card-six').addEventListener('click', function(){
   const totalPricePrevious = inputPrice('total-price')
   const newTotalPrice = totalPricePrevious+ productPrice;
   setValue('total-price', newTotalPrice);
+  enablePurchaseButton();
+  enableCouponButton();
+  applyCoupon();
 })
 
 const p1 = document.getElementById('total-price').innerText;

@@ -74,11 +74,12 @@ for (let i = 0; i < ratingInputs.length; i++) {
 
 // go home button
 document.getElementById("go-home").addEventListener("click", function () {
+  window.location.href = "index.html";
   document.getElementById("product-entry").innerHTML = "";
   document.getElementById("total-price").innerText = "";
   document.getElementById("discount-amount").innerText = "";
   document.getElementById("total").innerText = "";
-  window.location.href = "index.html";
+  
 });
 
 // coupon apply button

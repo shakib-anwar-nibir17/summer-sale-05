@@ -82,7 +82,14 @@ document.getElementById("go-home").addEventListener("click", function () {
 });
 
 // coupon apply button
-document.getElementById("coupon-button").addEventListener("click", function () {
+document.getElementById("coupon-button").addEventListener("click", applyCoupon);
+document.getElementById("coupon-field").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    applyCoupon();
+  }
+});
+
+function applyCoupon() {
   const couponField = document.getElementById("coupon-field");
   const couponCode = couponField.value;
   if (couponCode === "SELL200") {
@@ -98,4 +105,4 @@ document.getElementById("coupon-button").addEventListener("click", function () {
     alert("Invalid Coupon Code");
     return;
   }
-});
+}

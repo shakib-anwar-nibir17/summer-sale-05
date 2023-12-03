@@ -66,10 +66,10 @@ function stopRatingClickPropagation(event) {
   event.stopPropagation();
 }
 
-const ratingInputs = document.querySelectorAll('.mask');
+const ratingInputs = document.querySelectorAll(".mask");
 
 for (let i = 0; i < ratingInputs.length; i++) {
-  ratingInputs[i].addEventListener('click', stopRatingClickPropagation);
+  ratingInputs[i].addEventListener("click", stopRatingClickPropagation);
 }
 
 // go home button
@@ -79,16 +79,17 @@ document.getElementById("go-home").addEventListener("click", function () {
   document.getElementById("total-price").innerText = "";
   document.getElementById("discount-amount").innerText = "";
   document.getElementById("total").innerText = "";
-  
 });
 
 // coupon apply button
 document.getElementById("coupon-button").addEventListener("click", applyCoupon);
-document.getElementById("coupon-field").addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    applyCoupon();
-  }
-});
+document
+  .getElementById("coupon-field")
+  .addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      applyCoupon();
+    }
+  });
 
 function applyCoupon() {
   const couponField = document.getElementById("coupon-field");
